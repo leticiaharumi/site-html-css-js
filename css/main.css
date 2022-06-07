@@ -29,7 +29,6 @@ main{
 .redes-sociais ul li{
     margin-left: 25px;
     display: inline-block;
-    float: left;
     list-style: none;
 }
 
@@ -93,8 +92,51 @@ main{
     border: 1px solid #d6d6d6;
 }
 
-.col-100{
+.col-100 {
     width: 100%;
     float: left;
     position: relative;
+}
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 40%;
+    left: 14%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/proximo.png);
+    top: 40%;
+    right: 14%;
+}
+
+.slider-principal{
+    width: 100%!important;
+}
+
+ul.slick-dots li{
+    display: inline-block;
+    font-size: 0;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.slick-dots li.slick-active{
+    background-color: #00bac6;
 }
